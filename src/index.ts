@@ -1,6 +1,4 @@
 /* eslint-disable no-console */
-/* eslint-disable import/no-unresolved */
-// import { Sorter } from './Sorter';
 import { NumberCollection } from './NumberCollection';
 import { CharactersCollection } from './CharactersCollection';
 import { LinkedList } from './LinkedList';

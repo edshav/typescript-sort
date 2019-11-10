@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 export abstract class Sorter {
   abstract compare(leftIndex: number, rightIndex: number): boolean;
 

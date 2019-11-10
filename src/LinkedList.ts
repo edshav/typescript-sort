@@ -1,8 +1,5 @@
-/* eslint-disable import/no-unresolved */
 /* eslint-disable max-classes-per-file */
-/* eslint-disable import/prefer-default-export */
 import { Sorter } from './Sorter';
-
 
 class Node {
   data: number;
@@ -64,13 +61,7 @@ export class LinkedList extends Sorter {
 
   compare(leftIndex: number, rightIndex: number): boolean {
     const { length } = this;
-    if (
-      !length
-      || leftIndex < 0
-      || leftIndex >= length
-      || rightIndex < 0
-      || rightIndex >= length
-    ) {
+    if (!length || leftIndex < 0 || leftIndex >= length || rightIndex < 0 || rightIndex >= length) {
       throw new Error('Index out of bounds');
     }
 
@@ -79,13 +70,7 @@ export class LinkedList extends Sorter {
 
   swap(leftIndex: number, rightIndex: number): void {
     const { length } = this;
-    if (
-      !length
-      || leftIndex < 0
-      || leftIndex >= length
-      || rightIndex < 0
-      || rightIndex >= length
-    ) {
+    if (!length || leftIndex < 0 || leftIndex >= length || rightIndex < 0 || rightIndex >= length) {
       throw new Error('Index out of bounds');
     }
     const leftNode = this.at(leftIndex);

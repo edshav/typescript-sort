@@ -1,5 +1,3 @@
-/* eslint-disable import/no-unresolved */
-/* eslint-disable import/prefer-default-export */
 import { Sorter } from './Sorter';
 
 export class NumberCollection extends Sorter {
@@ -19,9 +17,6 @@ export class NumberCollection extends Sorter {
   }
 
   swap(leftIndex: number, rightIndex: number): void {
-    [this.data[leftIndex], this.data[rightIndex]] = [
-      this.data[rightIndex],
-      this.data[leftIndex],
-    ];
+    [this.data[leftIndex], this.data[rightIndex]] = [this.data[rightIndex], this.data[leftIndex]];
   }
 }
